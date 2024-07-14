@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #d4a373;
+  --secondary-color: #ccd5ae;
+  --background-color: #2b2d42;
+  --text-color: #edf2f4;
+  --chat-bg: #3d405b;
+  --user-message-bg: #81b29a;
+  --bot-message-bg: #4a4e69;
+}
+
+body {
+  font-family: 'Arial', sans-serif; // Default font
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden; // Prevents horizontal scroll
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button, a {
+  font-family: 'Cinzel', serif; // Stylish font for buttons and links
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+}
+
+input, textarea {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5em;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px 0 var(--secondary-color);
+  }
+}
